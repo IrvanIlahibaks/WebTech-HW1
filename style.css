@@ -53,7 +53,21 @@ a:hover {
 a:active {
     color:orange
 }
+/* specificity: less to more specific: element/class/id/inline
+with class =., id =# */
+h3 {
+    color: rgb(0, 0, 0);
+}
+.italics {
+    font-style: italic;
+}
+p {
+    color: rgb(46, 46, 46);
+}
 
+
+
+/* allowing image to scale with webpage, max size is pixel width  */
 img {
     max-width: 100%;
     height: auto;
