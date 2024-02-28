@@ -89,6 +89,11 @@ img {
     padding: 10px;
   }
 
+  .box img {
+    width: 55%;
+    height: auto;
+  }
+
 .clearfix::after {
     content: "";
     clear: both;
