@@ -38,6 +38,10 @@ li {
     color:black
 }
 
+.nav--color a.active {
+    color:orange;
+}
+
 /* general style for links*/
 a:link {
     color: black;
