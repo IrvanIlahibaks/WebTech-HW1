@@ -33,6 +33,7 @@ li {
     margin: 10px;
 }
 
+
 /*nav consistent style*/
 .nav--color a:link, .nav--color a:visited, .nav--color a:hover {
     color:black
@@ -69,6 +70,7 @@ h3 {
 p {
     color: rgb(15, 15, 15);
 }
+
 
 
 
