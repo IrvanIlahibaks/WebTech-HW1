@@ -53,7 +53,23 @@ a:hover {
 a:active {
     color:orange
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+.box {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
