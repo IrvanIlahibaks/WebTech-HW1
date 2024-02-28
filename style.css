@@ -32,6 +32,24 @@ li {
     margin: 10px;
 }
 
-a {
+/*nav consistent style*/
+.nav--color a:link, .nav--color a:visited, .nav--color a:hover {
+    color:black
+}
+
+/* general style for links*/
+a:link {
     color: black;
+}
+
+a:visited {
+    color:blue
+}
+
+a:hover {
+    color:red
+}
+
+a:active {
+    color:orange
 }
