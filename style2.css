@@ -14,54 +14,53 @@ body {
 }
 
 .navigatie {
-  overflow: clip;
-  background-color: rgb(40, 4, 188);
+    overflow: hidden;
+    background-color: rgb(40, 4, 188);
 }
 
 .navigatie a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 15px 15px;
-  text-decoration: none;
-  font-size: 18px;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .navigatie a:hover {
-  background-color: #ddd;
-  color: red;
+    background-color: #ddd;
+    color: red;
 }
 
 .navigatie a.active {
-  color: orange;
+    background-color: rgb(40, 4, 188);
+    color: orange;
 }
-
-
 
 .navigatie .icon {
-  display: none;
+    display: none;
 }
 /*If window is less than 500 px, go to hamburger menu */
-@media screen and (max-width: 500px) {
-  .navigatie a:not(:first-child) {display: none;}
-  .navigatie a.icon {
-    float: right;
-    display: block;
+@media screen and (max-width: 600px) {
+    .navigatie a:not(:first-child) {display: none;}
+    .navigatie a.icon {
+        float: right;
+        display: block;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .navigatie.responsive {position: relative;}
-  .navigatie.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+@media screen and (max-width: 600px) {
+    .navigatie.responsive {position: relative;}
+    .navigatie.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
   }
-  .navigatie.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+    .navigatie.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
   }
 }
 /* specificity: less to more specific: element/class/id/inline
