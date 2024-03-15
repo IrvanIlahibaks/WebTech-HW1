@@ -45,8 +45,12 @@ class Publisher extends Company {
     }
 }
 
+<<<<<<< HEAD
 //Change the appearance of elements on the page.
 var selectedElement = 'body';
+=======
+var selectedElement = 'body, p';
+>>>>>>> a40584a02959a0289e9bb3b55aa948b7f99ac59d
 
 function selectElement(value) {
     selectedElement = value; 
