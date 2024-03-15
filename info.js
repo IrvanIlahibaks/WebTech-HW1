@@ -45,7 +45,7 @@ class Publisher extends Company {
     }
 }
 
-var selectedElement = 'body';
+var selectedElement = 'body, p';
 
 function selectElement(value) {
     selectedElement = value; 
