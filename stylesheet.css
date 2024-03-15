@@ -25,9 +25,23 @@ section {
 }
 
 img {
-    width: 200px; /* Fix this */
-}
+    max-width: 100%; /* Fix this */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 
+}
+@media (max-width: 600px){
+    .section {
+        
+    }
+    img {
+        max-width: 50%;
+        height: 50%;
+        display: block;
+        margin 0 auto;
+    }
+}
 
 nav {
     overflow: hidden;
