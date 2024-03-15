@@ -39,13 +39,12 @@ class Company {
     }
 }
 
-class Publisher extends Publisher {
+class Publisher extends Company {
     constructor(name, page, titles) {
         super(name, page);
         this.titles = titles;
     }
 }
-
 
 
 
