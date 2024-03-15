@@ -45,20 +45,20 @@ class Publisher extends Company {
     }
 }
 
-var selectedElement = body;
+var selectedElement = 'body';
 
 function selectElement(value) {
     selectedElement = value; 
 }
 
 function changeAppearance(value) {
-    if (value == lFontWhiteBg) {
+    if (value == 'lFontWhiteBg') {
         document.getElementsByTagName(selectElement).style.font = "large"; // Ik weet niet zeker of deze opdrachten werken
         document.getElementsByTagName(selectElement).style.background = "white";
-    } else if (value == mFontBlackBg) {
+    } else if (value == 'mFontBlackBg') {
         document.getElementsByTagName(selectElement).style.font = "medium";
         document.getElementsByTagName(selectElement).style.background = "black";
-    } else if (value == mFontWhiteBg) {
+    } else if (value == 'mFontWhiteBg') {
         document.getElementsByTagName(selectElement).style.font = "medium";
         document.getElementsByTagName(selectElement).style.background = "white";
     } else {
