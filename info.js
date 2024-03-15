@@ -134,6 +134,7 @@ pPlot.appendChild(pPlottext);
 divFirst.appendChild(pPlot);
 
 
+document.body.appendChild(divFirst);
 
 
 /* Format for new paragraph.
@@ -147,7 +148,6 @@ divFirst.appendChild(pOne); */
 
 
 
-document.body.appendChild(divFirst);
 
 /* Op deze pagina komt de info. De info moet ook weer als nodes enzo, met book en strings */
 
