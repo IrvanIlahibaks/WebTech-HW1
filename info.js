@@ -45,6 +45,7 @@ class Publisher extends Company {
     }
 }
 
+//Change the appearance of elements on the page.
 var selectedElement = 'body';
 
 function selectElement(value) {
@@ -81,6 +82,7 @@ function changeAppearance(value) {
         }
     });
 }
+
 
 
 // Eerst author maken
@@ -137,19 +139,14 @@ divFirst.appendChild(pPlot);
 document.body.appendChild(divFirst);
 
 
+
+
 /* Format for new paragraph.
 
 const pOne = document.createElement("p");
 const pOnetext = document.createTextNode("Paragraph 1");
 pOne.appendChild(pOnetext);
 divFirst.appendChild(pOne); */
-
-
-
-
-
-
-/* Op deze pagina komt de info. De info moet ook weer als nodes enzo, met book en strings */
 
 
 
