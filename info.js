@@ -137,20 +137,4 @@ document.body.appendChild(divFirst);
 /* Op deze pagina komt de info. De info moet ook weer als nodes enzo, met book en strings */
 
 
-<footer>
-    <select name="elementSelector" id="elementSelector" onchange="selectElement(this.value)">
-        <option value="body">Body</option>
-        <option value="header">Header</option>
-        <option value="footer">Footer</option>
-        <option value="aside">Aside</option>
-        <option value="articles">Articles</option>
-        <option value="sections">Sections</option>
-    </select>
 
-    <select name="appearanceSelector" id="appearanceSelector" onchange="changeAppearance(this.value)">
-        <option value="lFontWhiteBg">Large font and white bg</option>
-        <option value="mFontBlackBg">Medium font and black bg</option>
-        <option value="mFontWhiteBg">Medium font and white bg</option>
-        <option value="sFontBlackBg">Small font and black bg</option>
-    </select>
-</footer>
