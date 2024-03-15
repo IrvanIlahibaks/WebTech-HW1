@@ -36,9 +36,6 @@ img {
 
 }
 @media (max-width: 600px){
-    .section {
-        
-    }
     img {
         max-width: 50%;
         height: 50%;
