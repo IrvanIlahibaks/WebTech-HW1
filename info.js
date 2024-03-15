@@ -52,19 +52,34 @@ function selectElement(value) {
 }
 
 function changeAppearance(value) {
-    if (value == 'lFontWhiteBg') {
-        document.getElementsByTagName(selectElement).style.font = "large"; // Ik weet niet zeker of deze opdrachten werken
-        document.getElementsByTagName(selectElement).style.background = "white";
-    } else if (value == 'mFontBlackBg') {
-        document.getElementsByTagName(selectElement).style.font = "medium";
-        document.getElementsByTagName(selectElement).style.background = "black";
-    } else if (value == 'mFontWhiteBg') {
-        document.getElementsByTagName(selectElement).style.font = "medium";
-        document.getElementsByTagName(selectElement).style.background = "white";
+    let elements;
+    if (selectedElement === 'body') { // Assuming you only want to select the body or specific elements by ID
+        elements = [document.querySelector(selectedElement)];
     } else {
-        document.getElementsByTagName(selectElement).style.font = "small";
-        document.getElementsByTagName(selectElement).style.background = "black";
+        elements = document.querySelectorAll(selectedElement); // For classes, tags, etc., that could have multiple instances
     }
+    
+    elements.forEach(element => {
+        switch(value) {
+            case "lFontWhiteBg":
+                element.style.fontSize = "large";
+                element.style.backgroundColor = "white";
+                break;
+            case "mFontBlackBg":
+                element.style.fontSize = "medium";
+                element.style.backgroundColor = "black";
+                break;
+            case "mFontWhiteBg":
+                element.style.fontSize = "medium";
+                element.style.backgroundColor = "white";
+                break;
+            case "sFontBlackBg":
+                element.style.fontSize = "small";
+                element.style.backgroundColor = "black";
+                break;
+            // Add more cases as necessary
+        }
+    });
 }
 
 
