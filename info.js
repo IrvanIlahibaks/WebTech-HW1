@@ -45,12 +45,10 @@ class Publisher extends Company {
     }
 }
 
-<<<<<<< HEAD
+
 //Change the appearance of elements on the page.
-var selectedElement = 'body';
-=======
 var selectedElement = 'body, p';
->>>>>>> a40584a02959a0289e9bb3b55aa948b7f99ac59d
+
 
 function selectElement(value) {
     selectedElement = value; 
@@ -101,46 +99,46 @@ const KakaoPage = new Publisher("KakaoPage", "https://en.wikipedia.org/wiki/Kaka
 const Sololevelingvol1 = new Book ("Solo Leveling vol.1", 2016, Chugong, "Fantasy", KakaoPage, 
 "https://www.worldswithoutend.com/covers/CG_solole01.jpg", "In a world where hunters — human warriors who possess supernatural abilities — must battle deadly monsters to protect mankind from certain annihilation, a notoriously weak hunter named Sung Jinwoo finds himself in a seemingly endless struggle for survival. One day, after narrowly surviving an overwhelmingly powerful double dungeon that nearly wipes out his entire party, a mysterious program called the System chooses him as its sole player and in turn, gives him the unique ability to level up in strength. This is something no other hunter is able to do, as a hunter's abilities are set once they awaken. He also unlocks a deeper ability to turn anyone he kills into a loyal minion called a Shadow. Jinwoo then sets out on a journey as he fights against all kinds of enemies, both man and monster, to discover the secrets of the dungeons and the true source of his powers.")
 
-/* making a DOM tree: pOnetext is a node of pOne, pOne is a node of divFirst etcetera */
-const divFirst = document.createElement("div"); //make div
+/* making a DOM tree: pOnetext is a node of pOne, pOne is a node of divInfo etcetera */
+const divInfo = document.createElement("div"); //make div
 
 const headerOne = document.createElement("h1"); //make h1
 const headerOneText = document.createTextNode("Title: " + Sololevelingvol1.title);
 headerOne.appendChild(headerOneText); //make headerOneText into child of headerOne
-divFirst.appendChild(headerOne);        //make headerOne into child of divFirst
+divInfo.appendChild(headerOne);        //make headerOne into child of divInfo
 
 const pGenre = document.createElement("p");
 const pGenretext = document.createTextNode("Genre: " + Sololevelingvol1.genre);
 pGenre.appendChild(pGenretext);
-divFirst.appendChild(pGenre);
+divInfo.appendChild(pGenre);
 
 const pYear = document.createElement("p");
 const pYeartext = document.createTextNode("Year: " + Sololevelingvol1.year);
 pYear.appendChild(pYeartext);
-divFirst.appendChild(pYear);
+divInfo.appendChild(pYear);
 
 const pAuthor = document.createElement("p");
 const pAuthortext = document.createTextNode("Author: " + Sololevelingvol1.authors.name);
 pAuthor.appendChild(pAuthortext);
-divFirst.appendChild(pAuthor);
+divInfo.appendChild(pAuthor);
 
 const pPublisher = document.createElement("p");
 const pPublishertext = document.createTextNode("Publisher: " + Sololevelingvol1.publisher.name);
 pPublisher.appendChild(pPublishertext);
-divFirst.appendChild(pPublisher);
+divInfo.appendChild(pPublisher);
 
 const imgCover = document.createElement("img");
 imgCover.src = Sololevelingvol1.cover;
 imgCover.alt = "Pictured: Brown cover with a small, white lizard. The title reads:'Solo Leveling I'";
-divFirst.appendChild(imgCover);
+divInfo.appendChild(imgCover);
 
 const pPlot = document.createElement("p");
 const pPlottext = document.createTextNode("Plot: " + Sololevelingvol1.plot);
 pPlot.appendChild(pPlottext);
-divFirst.appendChild(pPlot);
+divInfo.appendChild(pPlot);
 
 
-document.body.appendChild(divFirst);
+document.body.appendChild(divInfo);
 
 
 
@@ -150,7 +148,7 @@ document.body.appendChild(divFirst);
 const pOne = document.createElement("p");
 const pOnetext = document.createTextNode("Paragraph 1");
 pOne.appendChild(pOnetext);
-divFirst.appendChild(pOne); */
+divInfo.appendChild(pOne); */
 
 
 
