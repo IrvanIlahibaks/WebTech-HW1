@@ -2,11 +2,11 @@
 Change css from responsive and back by clicking the hamburger button.
 */
 function myResponsive() {
-  var zz = document.getElementById("myNavigatie");
-  if (zz.className === "navigatie") {
+  var zz = document.getElementById("navbar");
+  if (zz.className === "navbar") {
     zz.className += " responsive";
   } else {
-    zz.className = "navigatie";
+    zz.className = "navbar";
   }
 }
 

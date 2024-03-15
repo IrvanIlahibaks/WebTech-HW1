@@ -1,6 +1,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
     margin: 0;
     padding: 0;
 }
@@ -9,20 +10,33 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0px;
+    /* margin: 0px; */
     background-color:rgb(184, 213, 224);
 }
 
-.nav__test {
-    color: rgb(40, 4, 188);
+article {
+    margin: 20px;
 }
 
-.navigatie {
+section {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 200px; /* Fix this */
+}
+
+/* .nav__test {
+    color: rgb(40, 4, 188);
+} */
+
+nav {
     overflow: hidden;
     background-color: rgb(40, 4, 188);
 }
-
-.navigatie a {
+nav a {
     float: left;
     display: block;
     color: black;
@@ -31,85 +45,82 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-
-.navigatie a:hover {
+nav a:hover {
     background-color: #ddd;
     color: red;
 }
-
-.navigatie a.active {
+nav a.active {
     background-color: rgb(40, 4, 188);
     color: orange;
 }
-
-.navigatie .icon {
+nav .icon {
     display: none;
 }
-/*If window is less than 500 px, go to hamburger menu */
+
+/* If window is less than 500 px, go to hamburger menu */
 @media screen and (max-width: 600px) {
-    .navigatie a:not(:first-child) {display: none;}
-    .navigatie a.icon {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
         float: right;
         display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-    .navigatie.responsive {position: relative;}
-    .navigatie.responsive .icon {
+    nav.responsive {position: relative;}
+    nav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
   }
-    .navigatie.responsive a {
+    nav.responsive a {
         float: none;
         display: block;
         text-align: left;
   }
 }
+
+
+
 /* specificity: less to more specific: element/class/id/inline
 with class =., id =# */
-h3 {
+/* h3 {
     color: rgb(0, 0, 0);
-}
-.italics {
+} */
+/* .italics {
     font-style: italic;
-}
+} */
 p {
     color: rgb(15, 15, 15);
 }
 
-
-
-
-/* allowing image to scale with webpage, max size is pixel width  */
-img {
+/* Allowing image to scale with webpage, max size is pixel width  */
+/* img {
     max-width: 100%;
     height: auto;
 }
 * {
     box-sizing: border-box;
-  }
+}
   
 .box {
     float: left;
     width: 50%;
     padding: 10px;
-  }
+}
 
-  .box img {
+.box img {
     width: 55%;
     height: auto;
-  }
+} */
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-  /*table styles*/
-
+/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
