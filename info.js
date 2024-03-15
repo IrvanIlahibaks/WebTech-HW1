@@ -1,3 +1,54 @@
+// Intializing classes
+class CreativeWork {
+    constructor(title, year, authors) {
+        this.title = title;
+        this.year = year;
+        this.authors = authors;
+    }
+}
+
+class Book extends CreativeWork {
+    constructor(title, year, authors, genre, publisher, cover, plot) {
+        super(title, year, authors);
+        this.genre = genre;
+        this.publisher = publisher;
+        this.cover = cover;
+        this.plot = plot;
+    }
+}
+
+class Person {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+}
+
+class Author extends Person {
+    constructor(name, year, titles, page) {
+        super(name, year);
+        this.titles = titles;
+        this.page = page; // Link to Wikipedia page
+    }
+}
+
+class Company {
+    constructor(name, page) {
+        this.name = name;
+        this.page = page; // Link to Wikipedia page
+    }
+}
+
+class Publisher extends Publisher {
+    constructor(name, page, titles) {
+        super(name, page);
+        this.titles = titles;
+    }
+}
+
+
+
+
 /* making a DOM tree: pOnetext is a node of pOne, pOne is a node of divFirst etcetera */
 const divFirst = document.createElement("div"); //make div
 
