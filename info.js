@@ -148,16 +148,3 @@ sectionInfo.appendChild(pPlot);
 
 
 document.body.appendChild(sectionInfo);
-
-
-
-
-/* Format for new paragraph.
-
-const pOne = document.createElement("p");
-const pOnetext = document.createTextNode("Paragraph 1");
-pOne.appendChild(pOnetext);
-sectionInfo.appendChild(pOne); */
-
-
-
